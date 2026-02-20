@@ -1,0 +1,26 @@
+{
+	"name": "studrabot",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "vite build && gh-pages -d dist",
+		"dev:pm2": "pm2 start ecosystem.config.cjs",
+		"dev:restart": "pm2 restart studrabot-dev",
+		"dev:stop": "pm2 stop studrabot-dev",
+		"dev:logs": "pm2 logs studrabot-dev"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.2.0",
+		"pm2": "^6.0.14",
+		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"alpinejs": "^3.15.8",
+		"gh-pages": "^6.3.0",
+		"tailwindcss": "^4.2.0"
+	}
+}
