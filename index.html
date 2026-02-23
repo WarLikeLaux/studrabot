@@ -88,19 +88,42 @@
 					прохождения системы Антиплагиат.
 				</p>
 
-				<div class="mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
+				<div class="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
 					<a :href="$store.contact.telegram" target="_blank" rel="noopener" id="main-cta-telegram"
-						class="glass-btn-primary px-8 py-4 sm:py-5 rounded-2xl text-[1.1rem] font-bold flex items-center justify-center gap-3 w-full sm:w-auto group">
-						<svg class="w-6 h-6 text-white" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+						class="glass-btn-primary px-8 py-4 sm:py-5 rounded-2xl text-[1.1rem] font-bold flex items-center justify-center gap-3 w-full sm:w-auto group relative overflow-hidden">
+						<div
+							class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
+						</div>
+						<svg class="w-6 h-6 text-white relative z-10" aria-hidden="true" viewBox="0 0 24 24"
+							fill="currentColor">
 							<path
 								d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
 						</svg>
-						Оценить работу
+						<span class="relative z-10">Узнать стоимость работы</span>
 					</a>
 					<a href="#services" id="secondary-cta-services"
-						class="glass-btn-secondary px-8 py-4 sm:py-5 rounded-2xl text-[1.1rem] font-bold flex items-center justify-center w-full sm:w-auto">
-						Подробнее
+						class="glass-btn-secondary px-8 py-4 sm:py-5 rounded-2xl text-[1.1rem] font-bold flex items-center justify-center w-full sm:w-auto group">
+						<span class="group-hover:text-white text-white/80 transition-colors">Спектр услуг</span>
 					</a>
+				</div>
+
+				<div
+					class="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-semibold tracking-wide text-white/40 uppercase">
+					<span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="none"
+							viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+							</path>
+						</svg> Строго без ИИ</span>
+					<span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="none"
+							viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+							</path>
+						</svg> Бесплатные правки</span>
+					<span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="none"
+							viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+							</path>
+						</svg> Полная анонимность</span>
 				</div>
 			</div>
 		</section>
@@ -305,20 +328,151 @@
 					</div>
 				</div>
 
+				<div class="mt-24 mb-16 text-center">
+					<div class="inline-flex glass-pill px-4 py-1.5 mb-6"><span
+							class="text-xs font-bold text-accent-300 tracking-wider uppercase">Прозрачность</span></div>
+					<h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 text-white">Как строится работа
+					</h2>
+					<p class="text-white/50 text-lg max-w-2xl mx-auto font-medium">Весь процесс разбит на логичные
+						этапы. Вы контролируете написание работы и можете показывать её руководителю по частям.</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto mb-24 relative">
+					<div
+						class="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-white/10 to-transparent z-0">
+					</div>
+
+					<div class="glass-card p-6 rounded-3xl relative z-10 flex flex-col items-center text-center">
+						<div
+							class="w-14 h-14 rounded-full bg-blue-500/20 border border-blue-400/30 flex items-center justify-center mb-4 text-lg font-black text-blue-300 shadow-[0_0_20px_rgba(116,143,252,0.2)]">
+							1</div>
+						<h4 class="font-bold text-lg mb-2 text-white">Оценка (15 мин)</h4>
+						<p class="text-sm text-white/50 font-medium leading-relaxed">Вы присылаете методичку и
+							требования. Я изучаю их и называю точную стоимость.</p>
+					</div>
+
+					<div class="glass-card p-6 rounded-3xl relative z-10 flex flex-col items-center text-center">
+						<div
+							class="w-14 h-14 rounded-full bg-purple-500/20 border border-purple-400/30 flex items-center justify-center mb-4 text-lg font-black text-purple-300 shadow-[0_0_20px_rgba(177,151,252,0.2)]">
+							2</div>
+						<h4 class="font-bold text-lg mb-2 text-white">План работы</h4>
+						<p class="text-sm text-white/50 font-medium leading-relaxed">Составляем подробный драфт и
+							структуру работы для утверждения с научным руководителем.</p>
+					</div>
+
+					<div class="glass-card p-6 rounded-3xl relative z-10 flex flex-col items-center text-center">
+						<div
+							class="w-14 h-14 rounded-full bg-orange-500/20 border border-orange-400/30 flex items-center justify-center mb-4 text-lg font-black text-orange-300 shadow-[0_0_20px_rgba(255,146,43,0.2)]">
+							3</div>
+						<h4 class="font-bold text-lg mb-2 text-white">Написание по главам</h4>
+						<p class="text-sm text-white/50 font-medium leading-relaxed">Пишу и сдаю работу частями. Это
+							безопасно и позволяет вносить коррективы на лету.</p>
+					</div>
+
+					<div class="glass-card p-6 rounded-3xl relative z-10 flex flex-col items-center text-center">
+						<div
+							class="w-14 h-14 rounded-full bg-green-500/20 border border-green-400/30 flex items-center justify-center mb-4 text-lg font-black text-green-300 shadow-[0_0_20px_rgba(105,219,124,0.2)]">
+							4</div>
+						<h4 class="font-bold text-lg mb-2 text-white">Оформление и защита</h4>
+						<p class="text-sm text-white/50 font-medium leading-relaxed">Проверка на Антиплагиат, строгий
+							ГОСТ и бесплатные правки до самой защиты.</p>
+					</div>
+				</div>
+
+				<div class="mt-24 max-w-3xl mx-auto">
+					<div class="text-center mb-10">
+						<h2 class="text-3xl font-extrabold tracking-tight mb-4 text-white">Частые вопросы</h2>
+					</div>
+					<div class="space-y-4">
+						<div class="glass-card rounded-2xl overflow-hidden" x-data="{ open: false }">
+							<button @click="open = !open"
+								class="w-full flex items-center justify-between p-6 text-left focus:outline-none bg-white/[0.01] hover:bg-white/[0.03] transition-colors">
+								<span class="font-bold text-lg text-white">Какие гарантии, что текст не сгенерирован
+									ИИ?</span>
+								<svg class="w-5 h-5 text-white/50 transform transition-transform duration-300"
+									:class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24"
+									stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7" />
+								</svg>
+							</button>
+							<div x-show="open" x-collapse.duration.300ms x-transition>
+								<div
+									class="p-6 pt-0 text-white/60 text-[0.95rem] leading-relaxed border-t border-white/5">
+									Я лично пишу текст на основе научных публикаций, диссертаций и монографий. К каждой
+									готовой работе, по вашему запросу, прикладывается подробный отчет из системы
+									«Антиплагиат.ВУЗ», подтверждающий высокую оригинальность и отсутствие
+									сгенерированного модулей.
+								</div>
+							</div>
+						</div>
+
+						<div class="glass-card rounded-2xl overflow-hidden" x-data="{ open: false }">
+							<button @click="open = !open"
+								class="w-full flex items-center justify-between p-6 text-left focus:outline-none bg-white/[0.01] hover:bg-white/[0.03] transition-colors">
+								<span class="font-bold text-lg text-white">А если научный руководитель внесет
+									правки?</span>
+								<svg class="w-5 h-5 text-white/50 transform transition-transform duration-300"
+									:class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24"
+									stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7" />
+								</svg>
+							</button>
+							<div x-show="open" x-collapse.duration.300ms x-transition style="display: none;">
+								<div
+									class="p-6 pt-0 text-white/60 text-[0.95rem] leading-relaxed border-t border-white/5">
+									Это нормальный рабочий процесс. Все правки и доработки по замечаниям вашего
+									преподавателя в рамках первоначально утвержденного плана делаются абсолютно
+									бесплатно вплоть до вашей успешной защиты.
+								</div>
+							</div>
+						</div>
+
+						<div class="glass-card rounded-2xl overflow-hidden" x-data="{ open: false }">
+							<button @click="open = !open"
+								class="w-full flex items-center justify-between p-6 text-left focus:outline-none bg-white/[0.01] hover:bg-white/[0.03] transition-colors">
+								<span class="font-bold text-lg text-white">Узнают ли в ВУЗе, что работу писал не
+									я?</span>
+								<svg class="w-5 h-5 text-white/50 transform transition-transform duration-300"
+									:class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24"
+									stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7" />
+								</svg>
+							</button>
+							<div x-show="open" x-collapse.duration.300ms x-transition style="display: none;">
+								<div
+									class="p-6 pt-0 text-white/60 text-[0.95rem] leading-relaxed border-t border-white/5">
+									Гарантирую полную конфиденциальность (NDA). Я не использую ваши работы в портфолио,
+									не передаю данные третьим лицам. После окончательной сдачи работы вся переписка и
+									исходные материалы могут быть удалены по вашему требованию.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div
-					class="mt-20 glass-cta p-10 sm:p-14 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 relative overflow-hidden">
+					class="mt-24 glass-cta p-10 sm:p-14 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 relative overflow-hidden">
 					<div
 						class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-600/20 filter blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2">
 					</div>
 					<div class="relative z-10 md:w-2/3 text-center md:text-left">
-						<h3 class="text-3xl font-bold mb-4">Готовы приступить к работе?</h3>
-						<p class="text-white/60 font-medium text-lg">Пришлите мне методичку и тему работы. Я дам точный
-							ответ по стоимости и срокам в течение 15 минут.</p>
+						<h3 class="text-3xl font-extrabold mb-4 text-white">Оставьте заявку на бесплатный анализ</h3>
+						<p class="text-white/70 font-medium text-lg">Пришлите мне тему и методичку прямо сейчас. В
+							течение 15 минут я проанализирую её, составлю драфт плана и назову точную стоимость работы.
+						</p>
 					</div>
 					<div class="relative z-10 flex-shrink-0">
 						<a :href="$store.contact.telegram" target="_blank" rel="noopener" id="footer-cta-telegram"
-							class="glass-btn-primary px-8 py-4 rounded-2xl text-[1.1rem] font-bold flex items-center justify-center gap-2 whitespace-nowrap">
-							Обсудить проект
+							class="glass-btn-primary px-8 py-5 rounded-2xl text-[1.1rem] font-bold flex items-center justify-center gap-3 whitespace-nowrap shadow-[0_0_40px_rgba(92,124,250,0.3)] hover:shadow-[0_0_60px_rgba(92,124,250,0.5)] transition-shadow">
+							<span class="relative flex h-3 w-3">
+								<span
+									class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+								<span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+							</span>
+							Написать в Telegram
 						</a>
 					</div>
 				</div>
