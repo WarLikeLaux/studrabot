@@ -3,25 +3,9 @@
 @font-face {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/inter-regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url("/fonts/inter-medium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/fonts/inter-semibold.woff2") format("woff2");
 }
 
 @font-face {
@@ -202,6 +186,34 @@
   .animate-slide-up {
     animation: slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
+}
+
+#site-header {
+  transition: all 0.5s;
+}
+
+#site-header.header-scrolled {
+  background: rgba(5, 5, 5, 0.6);
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+[data-faq-content] {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+[data-faq-content].faq-open {
+  overflow: visible;
+}
+
+[data-faq-icon] {
+  transition: transform 0.3s ease;
 }
 
 @keyframes blob {
