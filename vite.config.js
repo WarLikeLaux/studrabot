@@ -4,4 +4,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
 	base: "/studrabot/",
 	plugins: [tailwindcss()],
+	server: {
+		host: true,
+		port: 3000,
+	},
 });
